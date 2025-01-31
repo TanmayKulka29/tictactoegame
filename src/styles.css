@@ -1,94 +1,71 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+.square {
+  background: #fff;
+  border: 3px solid #000;
+  float: left;
+  font-size: 5vw;
+  font-weight: bold;
+  line-height: 1.5;
+  height: 10vw;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 10vw;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+.game-board {
+  max-width: fit-content;
+  margin-inline: auto;
+}
+
+.game-info {
   
-  body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-  }
-  
-  h1 {
-    margin-top: 0;
-    font-size: 22px;
-  }
-  
-  h2 {
-    margin-top: 0;
-    font-size: 20px;
-  }
-  
-  h3 {
-    margin-top: 0;
-    font-size: 18px;
-  }
-  
-  h4 {
-    margin-top: 0;
-    font-size: 16px;
-  }
-  
-  h5 {
-    margin-top: 0;
-    font-size: 14px;
-  }
-  
-  h6 {
-    margin-top: 0;
-    font-size: 12px;
-  }
-  
-  code {
-    font-size: 1.2em;
-  }
-  
-  ul {
-    padding-inline-start: 20px;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: sans-serif;
-    margin: 20px;
-    padding: 0;
-  }
-  
-  .square {
-    background: #fff;
-    border: 3px solid #000;
-    float: left;
-    font-size: 5vw; 
-    font-weight: bold;
-    line-height: 1.5; 
-    height: 10vw; 
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 10vw; 
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: '';
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  .game {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;  
-    width: 100vw; 
-  }
-  
-  .game-info {
-    margin-left: 20px;
-  }
-  
+}
+
+.ggmae {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+button {
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
